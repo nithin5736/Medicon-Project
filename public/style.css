@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu';
+}
+   
+#logo {
+    font-size: 40px;
+}
+   
+.form-control{
+    width: 30rem;
+}
+   
+#search {
+    padding-top: 2px;
+    margin-right: 0px;
+}
+   
+.text-end {
+   margin-left: 350px;
+}
+   
+#icon{
+    margin-left: 80px;
+    margin-right: 50px;
+    padding-right: 50px;
+}
+
+.carousel-inner {
+    padding-top: 5px;
+}
+   
+/* #searchbar {
+    margin:3px;
+} */
+
+#carouselExampleControls {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+

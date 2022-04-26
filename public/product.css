@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("https://jstclick.com/image/cache/111111/Dettol-Antiseptic-Disinfectant-Liquid-550ml-Pid-129620-9edcbd7cad9ee61b-800x800.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/514hU8nuPiS._SL1500_.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/517WpNzGv5S._SY450_.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://cdn.shopify.com/s/files/1/0415/0460/4309/products/dettolspray_600x600_crop_center.jpg?v=1618258518") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/H08110/godrej-good-knight-naturals-neem-liquid-vapouriser-refill-pack-of-2-1-1643882347.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/81ECUJANPML._AC_SS450_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/715Zz0TmnmL._SL1500_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51Nz0j+TLXS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-9 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51LhazyTaDL._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-10 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1637515307.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-11 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/L81352/dr-odin-steam-vaporizer-1-1641792192.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-12 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/131679/one-touch-select-glucometer-test-strips-bottle-of-50-1-1637513475.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-13 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/K78780/pharmeasy-pill-box-organizer-2-1643879982.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-14 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/Z36722/beurer-ft-09-1-clinical-thermometer-2-1643876366.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-15 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-2-1643879897.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-16 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/I34090/dr-morepen-bp-one-bp-02-bp-monitor-2-1643880521.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-17 .part-1::before {
+    background: url("https://rukminim2.flixcart.com/image/416/416/jay8xow0/glucometer-strip/e/q/d/hdcdstp5o-control-d-original-imafydr36gn3rvyn.jpeg?q=70") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-18 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/81ECUJANPML._AC_SS450_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-19 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/715Zz0TmnmL._SL1500_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-20 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51TPUwlsZ6L._SY450_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-21 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/C02922/harpic-lemon-bathroom-cleaner-bottle-of-200-ml-2-1641793402.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-22 .part-1::before {
+    background: url("https://onemg.gumlet.io/image/upload/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/v1595249070/yqchbjyomuc5ftng2xyu.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-23 .part-1::before {
+    background: url("https://assets.sebamedusa.com/spree/images/1212/large/1152781.jpg?1621079734") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-24 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/I07034/fash-x-gel-face-wash-200gm-2-1643881499.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-25 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61fVIcNoDoL._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-26 .part-1::before {
+    background: url("https://www.tabletshablet.com/wp-content/uploads/2021/05/Abzorb-Antifungal-Soap-100gm.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-27 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/I01439/episoft-ac-sunscreen-spf30-lotion-75gm-3-1643882034.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-28 .part-1::before {
+    background: url("https://onemg.gumlet.io/image/upload/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/v1635138756/v2smyevdxb9xkyz9oq2s.png") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-29 .part-1::before {
+    background: url("https://rukminim2.flixcart.com/image/416/416/k4x2du80/face-wash/6/e/p/100-face-wash-lite-glo-original-imafnq3chcxrmznk.jpeg?q=70") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-30 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61qHFEQe0nL._SY879_PIbundle-2,TopRight,0,0_SX450SY879SH20_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-31 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61OXPHFgr+L._SL1500_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-32 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61wBtCk2sSL._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-33 .part-1::before {
+    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FEverHerb-Organic-Juice-Rejuvenates-Added%2Fdp%2FB08LCP17M4&psig=AOvVaw2oEioy9Ru9I3hT9ExpAJ1V&ust=1650988502551000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMCd7svJr_cCFQAAAAAdAAAAABAK") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-34 .part-1::before {
+    background: url("https://www.govkarts.com/wp-content/uploads/2020/12/2174a.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-35 .part-1::before {
+    background: url("https://www.bigbasket.com/media/uploads/p/xxl/40189240_3-kelloggs-muesli-with-20-nuts-delight.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-36 .part-1::before {
+    background: url("https://rukminim2.flixcart.com/image/416/416/khp664w0-0/artificial-sweetener/d/9/o/100-stevia-sweetener-sugar-free-100-tablets-pack-of-1-equal-original-imafxnepgczjfyt8.jpeg?q=70") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-37 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61OJv145A5L._SX679_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-38 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/V89971/drreddys-celevida-livnutrition-drink-for-liver-healthchocolate-flavour-400g-2-1641197227.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-39 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/164720/sugar-free-gold-sweetener-tablets-strip-of-300-6.4-1641398758.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-40 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/61qE4xHlcKS._SX569_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-41 .part-1::before {
+    background: url("https://media.clickoncare.com/catalog/product/cache/1/thumbnail/500x500/9df78eab33525d08d6e5fb8d27136e95/b/-/b-protin-chocolate-flavor_-500g-9244469986.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-42 .part-1::before {
+    background: url("https://newassets.apollo247.com/pub/media/catalog/product/d/e/dep0174.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-43 .part-1::before {
+    background: url("https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/v1630044629/swfrq3gl6ovcevvrwk2v.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-44 .part-1::before {
+    background: url("https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/v1627473605/fybuskjdp8aghyv8zkrr.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-45 .part-1::before {
+    background: url("https://5.imimg.com/data5/SELLER/Default/2020/9/WT/WU/IF/39873816/savlon-surface-disinfectant-spray-170g-230ml--500x500.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-46 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51Nz0j+TLXS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-47 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51Nz0j+TLXS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-48 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51Nz0j+TLXS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-49 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51Nz0j+TLXS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-50 .part-1::before {
+    background: url("https://cdn01.pharmeasy.in/dam/products_otc/281751/revital-h-health-supplement-capsules-bottle-of-60-2-1643883822.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-51 .part-1::before {
+    background: url("https://m.media-amazon.com/images/I/51Nz0j+TLXS._SL1000_.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-52 .part-1::before {
+    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.netmeds.com%2Fnon-prescriptions%2Fmaxirich-gold-capsules-7s&psig=AOvVaw2d2lapRqvQ8FgNOFnLP9Np&ust=1650989782186000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjy963Or_cCFQAAAAAdAAAAABAM") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}

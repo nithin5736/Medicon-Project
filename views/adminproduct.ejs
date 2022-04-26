@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Medicon | AdminProducts</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">AdminPanel</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/admin">Home</a></li>
+            <li><a href="/admincust">Customers</a></li>
+            <li><a href="/adminproduct">Products</a></li>
+          </ul>
+        </div>
+      </nav>
+    <% for(let i=0;i<locals.prod_data.length;i++){ %> 
+            <div class="userbody" style="font-family:'ubuntu'; font-size:large;">
+                <b><h2 style="color:red;">Product Name : <%= locals.prod_data[i].productname %> </b></h2>
+                <b><h2 style="color:Black;">Price : Rs.<%= locals.prod_data[i].price %> </b></h2>
+                <hr>
+            </div>
+    <% } %>
+</body>
+</html>

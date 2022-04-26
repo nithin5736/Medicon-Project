@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Medicon | AdminCustomers</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse"">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">AdminPanel</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/admin">Home</a></li>
+            <li><a href="/admincust">Customers</a></li>
+            <li><a href="/adminproduct">Products</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <% for(let i=0;i<locals.cust_data.length;i++){ %>
+            <div style="font-family:'ubuntu'; font-size:large;">
+                <b><h1 style="color:blue">Name : <%= locals.cust_data[i].fullname %> </h1></b>
+                <b><h1 style="color:black">Email : <%= locals.cust_data[i].email %> </h1></b>
+                <b><h1 style="color:black">Customer_block_status : <%=locals.cust_data[i].blockstatus||'false'%></h1></b>
+                <form action="/custdelete/<%= locals.cust_data[i]._id %>" method="post" style="float:left;padding-right: 10px;">
+                    <button type="submit" style="cursor:pointer;color:white;background-color:green;border:3px solid white;border-radius: 10px;">block</button>
+                </form>
+                <form action="/custUnblock/<%= locals.cust_data[i]._id %>" method="post">
+                    <button type="submit" style="cursor:pointer;color:white;background-color:violet;border:3px solid white;border-radius: 10px;">Unblock</button>
+                </form>
+                <hr size="10">
+            </div>
+    <% } %>
+</body>
+</html>

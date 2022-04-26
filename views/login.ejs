@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login-Signup</title>
+    <!-- Login and Registration Form in HTML & CSS -->
+    <link rel="stylesheet" href="/login.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<script>  
+    function validateForm() {  
+        //collect form data in JavaScript variables  
+        var pw1 = document.getElementById("pswd1").value;  
+        var pw2 = document.getElementById("pswd2").value;  
+        var name1 = document.getElementById("fname").value;  
+        var name2 = document.getElementById("lname").value;  
+          
+        //check empty first name field  
+        if(name1 == "") {  
+          document.getElementById("blankMsg").innerHTML = "**Fill the first name";  
+          return false;  
+        }  
+          
+        //character data validation  
+        if(!isNaN(name1)){  
+          document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";  
+          return false;  
+        }  
+      
+       //character data validation  
+        if(!isNaN(name2)){  
+          document.getElementById("charMsg").innerHTML = "**Only characters are allowed";  
+          return false;  
+        }   
+        
+        //check empty password field  
+        if(pw1 == "") {  
+          document.getElementById("message1").innerHTML = "**Fill the password please!";  
+          return false;  
+        }  
+        
+        //check empty confirm password field  
+        if(pw2 == "") {  
+          document.getElementById("message2").innerHTML = "**Enter the password please!";  
+          return false;  
+        }   
+         
+        //minimum password length validation  
+        if(pw1.length < 8) {  
+          document.getElementById("message1").innerHTML = "** length must be atleast 8 characters";  
+          return false;  
+        }  
+      
+        //maximum length of password validation  
+        if(pw1.length > 15) {  
+          document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";  
+          return false;  
+        }  
+        
+        if(pw1 != pw2) {  
+          document.getElementById("message2").innerHTML = "**Passwords are not same";  
+          return false;  
+        } else {  
+          alert ("Your password created successfully");  
+          document.write("JavaScript form has been submitted successfully");  
+        }  
+     }  
+    </script> 
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+             
+                <div class="text">
+                    <span class="text-1">Medicon</span>
+                    <span class="text-2">Take it easy</span>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Login</div>
+
+                    <form action="/index" method="post">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" name="password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Submit">
+                            </div>
+                            <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                 <div class="signup-form">
+                    <div class="title">Signup</div>
+                        <form action="/login" method="post" > 
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="fname" name="fullname" placeholder="Enter your name" >
+                                <span id = "blankMsg" style="color:rgb(204, 0, 255)"> </span> <br><br>  
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="email"  id="lname" name="mail" placeholder="Enter your e-mail" >
+                                <span id = "charMsg" style="color:rgb(204, 0, 255)"> </span> <br><br>  
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+
+                                <input type="password" id="pswd1" name="psw" placeholder="enter password">
+                                <span id = "message1" style="color:rgb(204, 0, 255)"> </span> <br><br>  
+                            </div> 
+                             <div class="input-box">
+                                 <i class="fas fa-lock"></i> 
+
+                                <input type="password" id="pswd2" name="conpsw"
+                                    placeholder="confirm password here">
+                                    <span id = "message2" style="color:rgb(204, 0, 255)"> </span> <br><br>
+                                </div> 
+                             <p id="message"></p>
+                            <div class="button input-box">
+                                <input class="button" type="submit" value="Submit">
+                            </div>
+                            <div class="text sign-up-text">Already have an account? <label for="flip">Login
+                                    now</label>
+                            </div>
+                        </div> 
+                    </form>
+                </div> 
+      
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

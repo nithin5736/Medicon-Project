@@ -1,0 +1,1137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medicon - medicines</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/1f1f6f32bc.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/headers.css">
+  <link rel="stylesheet" href="/boxes.css">
+  <link rel="stylesheet" href="/product.css">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <!-- Google fonts - "ubuntu" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&family=Ubuntu:wght@300;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navigation bar-->
+  <header>
+    <div class="px-3 py-2 bg-dark text-white">
+      <div class="" id="icon">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+            id="logo">
+            <img src="/logo/logo.svg" alt="" width="100" height="80" class="d-inline-block align-text-top">
+            Medicon
+            <svg class="bi me-2" width="50" height="50" role="img" aria-label="Bootstrap">
+              <use xlink:href="#bootstrap" />
+            </svg>
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="/medicines" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#home" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bandaid"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M14.121 1.879a3 3 0 0 0-4.242 0L8.733 3.026l4.261 4.26 1.127-1.165a3 3 0 0 0 0-4.242ZM12.293 8 8.027 3.734 3.738 8.031 8 12.293 12.293 8Zm-5.006 4.994L3.03 8.737 1.879 9.88a3 3 0 0 0 4.241 4.24l.006-.006 1.16-1.121ZM2.679 7.676l6.492-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Z" />
+                  <path
+                    d="M5.56 7.646a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708Zm1.415-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707ZM8.39 4.818a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707Zm0 5.657a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707ZM9.803 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707Zm1.414-1.414a.5.5 0 1 1-.706.708.5.5 0 0 1 .707-.708ZM6.975 9.06a.5.5 0 1 1-.707.708.5.5 0 0 1 .707-.707ZM8.39 7.646a.5.5 0 1 1-.708.708.5.5 0 0 1 .707-.708Zm1.413-1.414a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707Z" />
+                </svg>
+                Medicines
+              </a>
+            </li>
+            <li>
+              <a href="/healthcare_products" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#speedometer2" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-boxes"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                </svg>
+                Healthcare Products
+              </a>
+            </li>
+            <li>
+              <a href="/Labtests" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#table" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                  class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                  <path
+                    d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z" />
+                  <path
+                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                </svg>
+                Lab tests
+              </a>
+            </li>
+            <li>
+              <a href="/customer_reviews" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#grid" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                  class="bi bi-card-list" viewBox="0 0 16 16">
+                  <path
+                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                  <path
+                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                </svg>
+                Customer Reviews
+              </a>
+            </li>
+            <li>
+              <a href="/cart" class="nav-link text-white">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#people-circle" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                Cart
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- products -->
+    <section class="section-products">
+      <div class="container">
+        <div class="row">
+          <!-- Product 1-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-1" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[0]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[0].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[0].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 2-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[1]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[1].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[1].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 3-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[2]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[2].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.100.99</h4>
+                <h4 class="product-price">Rs.<%= result[2].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 4-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-4" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[3]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[3].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[3].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 5-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-5" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[4]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[4].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[4].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 6-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-6" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[5]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[5].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[5].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 7-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-7" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[6]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[6].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[6].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 8-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-8" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[7]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[7].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[7].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 9-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-9" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[8]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[8].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[8].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 10-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-10" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[9]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[9].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[9].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 11-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-11" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[10]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[10].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[10].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 12-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-12" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[11]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[11].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[11].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 13-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-13" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[12]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[12].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[12].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 14-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-14" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[13]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[13].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[13].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 15-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-15" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[14]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[14].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[14].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 16-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-16" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[15]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[15].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[15].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 17-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-17" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[16]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[16].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[16].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 18-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-18" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[17]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[17].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[17].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 19-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-19" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[18]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[18].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[18].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 20-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-20" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[19]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[19].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[19].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!-- Product 21-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-21" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[20]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[20].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[20].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 22-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-22" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[21]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[21].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[21].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 23-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-23" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[22]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[22].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.100.99</h4>
+                <h4 class="product-price">Rs.<%= result[22].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 24-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-24" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[23]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[23].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[23].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 25-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-25" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[24]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[24].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[24].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 26-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-26" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[25]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[25].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[25].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 27-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-27" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[26]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[26].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[26].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 28-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-28" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[27]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[27].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[27].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 29-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-29" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[28]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[28].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[28].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 30-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-30" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[29]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[29].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[29].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 31-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-31" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[30]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[30].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[30].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 32-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-32" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[31]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[31].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[31].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 33-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-13" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[32]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[32].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[32].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 34-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-34" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[33]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[33].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[33].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 35-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-35" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[34]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[34].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[34].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 36-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-36" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[35]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[35].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[35].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 37-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-37" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[36]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[36].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[36].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 38-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-38" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[37]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[37].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[37].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 39-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-39" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[38]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[38].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[38].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 40-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-40" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[39]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[39].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[39].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!-- Product 41-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-1" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[40]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[40].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[40].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 42-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-2" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[41]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[41].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[41].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 43-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-3" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[42]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[42].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.100.99</h4>
+                <h4 class="product-price">Rs.<%= result[42].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 44-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-4" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[43]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[43].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[43].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 45-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-5" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[44]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[44].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[44].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 46-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-6" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[45]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[45].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[45].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 47-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-7" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[46]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[46].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[46].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 48-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-8" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[47]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[47].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[47].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 49-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-9" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[48]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[48].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.79.99</h4>
+                <h4 class="product-price">Rs.<%= result[48].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 50-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-10" class="single-product">
+              <div class="part-1">
+                <span class="discount">15% off</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[49]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[49].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[49].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 51-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-11" class="single-product">
+              <div class="part-1">
+                <ul>
+                  <li><a href="/medicines/<%= result[50]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[50].productname %>
+                </h3>
+                <h4 class="product-old-price">Rs.99.99</h4>
+                <h4 class="product-price">Rs.<%= result[50].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <!--Product 52-->
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <div id="product-12" class="single-product">
+              <div class="part-1">
+                <span class="new">new</span>
+                <ul>
+                  <li><a href="/medicines/<%= result[51]._id %>"><i class="fas fa-shopping-cart"></i></a></li>
+                  <li><a href="#"><i class="fas fa-heart"></i></a></li>
+                </ul>
+              </div>
+              <div class="part-2">
+                <h3 class="product-title">
+                  <%= result[51].productname %>
+                </h3>
+                <h4 class="product-price">Rs.<%= result[51].price %>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <%- include('./partials/footer.ejs') %>
+
+
+      <!-- Bootstrap scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
